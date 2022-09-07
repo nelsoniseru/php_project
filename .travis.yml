@@ -1,0 +1,19 @@
+sudo: false
+
+language: php
+
+services:
+  - docker
+
+php:
+  - 7.2
+
+before_script:
+    - cd microservices/application/category_management/
+    - travis_retry composer self-update
+    - travis_retry composer install --no-interaction --prefer-source --dev
+  
+script:
+  - composer test tests/CategoryTestCase.php
+  
+install: true
