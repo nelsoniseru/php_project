@@ -2,10 +2,8 @@
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Anamakine: mariadb
--- Üretim Zamanı: 27 Haz 2019, 09:59:13
--- Sunucu sürümü: 10.4.6-MariaDB-1:10.4.6+maria~bionic
--- PHP Sürümü: 7.2.19
+--
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Veritabanı: `user_management`
+-- 
 --
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `users`
+-- 
 --
 
 CREATE TABLE `users` (
@@ -40,7 +38,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Tablo döküm verisi `users`
+-- 
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `realname`, `last_login_date`, `last_login_ip`, `level`, `token`) VALUES
@@ -48,11 +46,11 @@ INSERT INTO `users` (`id`, `username`, `password`, `realname`, `last_login_date`
 (2, 'user', '$2y$10$GwSPNnrYIVmGGhymZ23/seBbuSc052lHWBENKI6QSkjsSI3AFEtdW', 'John Doe', NULL, NULL, 0, NULL);
 
 --
--- Dökümü yapılmış tablolar için indeksler
+-- 
 --
 
 --
--- Tablo için indeksler `users`
+-- 
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
@@ -60,11 +58,11 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `username_UNIQUE` (`username`);
 
 --
--- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
+--
 --
 
 --
--- Tablo için AUTO_INCREMENT değeri `users`
+--
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
