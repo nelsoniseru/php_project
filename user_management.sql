@@ -1,6 +1,5 @@
 -- phpMyAdmin SQL Dump
 -- version 4.9.0.1
--- https://www.phpmyadmin.net/
 --
 --
 
